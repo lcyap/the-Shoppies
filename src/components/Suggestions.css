@@ -1,0 +1,62 @@
+.sugg-container{
+    background: rgba( 255, 255, 255, 0.40 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    max-width: 700px;
+    width: 700px;
+    margin: 20px;
+    color: white;
+}
+.movie-container{
+    margin: 10px; 
+    text-align: center;
+    position: relative;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    background: transparent;
+
+}
+.sugg-desc h4{
+    text-align: center;
+    letter-spacing: 5px;
+    padding-top:10px;
+    text-transform: uppercase;
+}
+.poster{
+    border-radius: 10px;
+    max-height: 200px;
+    max-width:150px;
+}
+.nom-btn button{
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 20px;
+    border: none;
+    background: #751616;
+    color: #fcf9f9;
+    transition: .3s
+}
+.nom-btn button:hover{
+    cursor: pointer;
+    background: rgb(175, 8, 8);
+    color: #f7f1f1;
+}
+.nom-btn button:focus{
+    outline: unset;
+}
+.nom-btn button:disabled{
+    background:grey;
+    color: rgb(207, 202, 202);
+    cursor:default;
+}
+@media screen and (max-width:678px){
+    .sugg-container{
+      width: auto;
+      
+    }
+  }
+
+

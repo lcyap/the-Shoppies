@@ -1,0 +1,93 @@
+.nom-outer{
+    background: rgb(45,1,1);
+    background: linear-gradient(180deg, rgba(45,1,1,1) 5%, rgba(129,11,17,1) 76%);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display:block;
+    margin-right:20px;
+    text-align: center;
+}
+.nom-head h3{
+    letter-spacing: 5px;
+    
+}
+.nom-container{
+    
+    
+    margin: 10px; 
+    text-align: center;
+    position: relative;
+    display:block;
+    width: 400px;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px; */
+    
+}
+
+.nom-movies{
+    padding-top: 20px;
+}
+.nom-poster{
+    border-radius: 10px;
+    max-height: 100px;
+    max-width:75px;
+}
+.nom-movies button{
+    font-size: .9em;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    outline:unset;
+    color:black;
+    background: #BD7722;
+}
+.nom-title-year{
+    font-size: .9em;
+    
+    text-align: center;
+}
+.nom-icon{
+    display: none;
+}
+.nom-icon .fas{
+    color: #BD7722;
+    
+}
+@media screen and (max-width:1030px){
+    .nom-outer{
+      position:absolute;
+      top:60%;
+      left: -150%;
+      transition: all 0.5s ease;
+      margin-right: 0;
+      
+    }
+    .nom-outer.active{
+        position: absolute;
+        top: 320px;
+        left:50%;
+        transform: translate(-50%, 0%); 
+        transition: all 0.5s ease-in-out;
+        z-index:99;
+        
+    }
+    .nom-icon {
+        display: block;
+        position: absolute;
+        top: 30.5%;
+        right: 50%;
+        transform: translate(-100%, 50%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        
+    }
+    
+  }
+
+  @media screen and (max-width:512px){
+    .nom-outer.active{
+        width:auto;
+        padding:10px;
+    }
+  }
