@@ -15,7 +15,7 @@ function App() {
 
 
   const sendQuery = async query =>{
-    let data = await axios.get(`http://www.omdbapi.com/?apikey=19b10e59&s=${query}&type=movie`)
+    let data = await axios.get(`https://www.omdbapi.com/?apikey=19b10e59&s=${query}&type=movie`)
     let purifiedData = data.data.Search
     setResultData(purifiedData)
   }
